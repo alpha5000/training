@@ -57,6 +57,7 @@ resource "aws_instance" "web" {
     service  = "autodesk-eagle-nest"
     location = "us-west-1"
     "Name" = "web ${count.index+1}/${var.num_webs}"
+    "Temp" = "example"
   }
 }
 
